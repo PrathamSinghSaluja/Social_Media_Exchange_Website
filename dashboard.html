@@ -1,0 +1,588 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--Bootstrap File-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.0/font/bootstrap-icons.min.css" integrity="sha512-H4E1ASW8Ru1Npd1wQPB7JClskV8Nv1FG/bXK6TWMD+U9YMlR+VWUZp7SaIbBVBV/iRtefsIsv9dLSN6fdUI36w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS File-->
+    <link rel="stylesheet" href="./css/sidebar.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--AOS Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+     <!-- Boxiocns CDN Link -->
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebar"
+            aria-controls="offcanvasExample"
+          >
+            <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+            <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+            <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+          </button>
+          <a
+            class="navbar-brand me-auto ms-lg-0 ms-3 fw-bold"
+            href="#"
+            >Social Media</a
+          >
+          <div class="information">
+
+            <span class="coins_info">
+                <h5 style="font-weight: 700;">200 Coins</h5>
+            </span>
+            <span class="user_info">
+                <h5 style="font-weight: 700;">Hi Pratham!</h5>
+            </span>
+        </div>
+        </div>
+      </nav>
+      <!-- top navigation bar -->
+
+
+      <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body mt-2">
+            <nav class="navbar-light">
+                <ul class="navbar-nav">
+                    <li class="logo">
+                        <h5>Social Media</h5>
+                    </li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3">
+                        DASHBOARD
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link pt-3 p-3 active">
+                            <span class="me-2">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <span>
+                                Profile
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link pt-1 p-3 active">
+                            <span class="me-2"><i class="fa-solid fa-bag-shopping"></i></span>
+                            <span>Buy Subscription</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link pt-1 p-3 active">
+                            <span class="me-2"><i class="fa fa-coins"></i></span>
+                            <span>Buy Points</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link pt-1 p-3 active">
+                            <span class="me-2"><i class="fa-solid fa-circle-plus"></i></span>
+                            <span>Add your Accounts</span>
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider bg-light" /></li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3 mb-1">
+                        TASKS
+                        </div>
+                    </li>
+
+                    <!-- Facebook -->
+
+
+                    <li>
+                        <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#facebook">
+                            <span class="me-3"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span>Facebook</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                <i class="bi bi-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="facebook">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3 pt-0">
+                                        <span>Facebook Likes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3 pt-0">
+                                        <span>Facebook Shares</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3 pt-0">
+                                        <span>Facebook Followers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3 pt-0">
+                                        <span>Facebook Post Like</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3 pt-0">
+                                        <span>Facebook Post Share</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Instagram -->
+
+                        <li>
+                            <a
+                            class="nav-link pt-2 p-3 sidebar-link"
+                            data-bs-toggle="collapse"
+                            href="#instagram"
+                            >
+                            <span class="me-3"><i class="fa-brands fa-instagram"></i></span>
+                            <span>Instagram</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                <i class="bi bi-chevron-down"></i>
+                                </span>
+                            </span>
+                            </a>
+                                <div class="collapse" id="instagram">
+                                <ul class="navbar-nav ps-3">
+                                    <li>
+                                        <a href="#" class="nav-link px-3 pt-0">
+                                            <span>Instagram Likes</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-3 pt-0">
+                                            <span>Instagram Followers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                </div>
+                        </li>
+
+                        <!-- Twitter -->
+
+
+          <li>
+            <a
+              class="nav-link pt-2 p-3 sidebar-link"
+              data-bs-toggle="collapse"
+              href="#twitter"
+            >
+              <span class="me-3"><i class="fa-brands fa-twitter"></i></span>
+              <span>Twitter</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+                <div class="collapse" id="twitter">
+                <ul class="navbar-nav ps-3">
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Twitter Likes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Twitter Followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Twitter Tweets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Twitter Retweets</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+          </li>
+
+          <!-- TikTok -->
+
+          <li>
+            <a
+              class="nav-link pt-2 p-3 sidebar-link"
+              data-bs-toggle="collapse"
+              href="#tiktok"
+            >
+              <span class="me-3"><i class="fa-brands fa-tiktok"></i></span>
+              <span>TikTok</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+                <div class="collapse" id="tiktok">
+                <ul class="navbar-nav ps-3">
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>TikTok Video Likes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>TikTok Followers</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+          </li>
+
+          <!-- Soundcloud -->
+
+          <li>
+            <a
+              class="nav-link pt-2 p-3 sidebar-link"
+              data-bs-toggle="collapse"
+              href="#soundcloud"
+            >
+              <span class="me-2"><i class="fa-brands fa-soundcloud"></i></span>
+              <span>Sound CLoud</span>
+              <span class="ms-auto">
+                <span class="right-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </span>
+              </span>
+            </a>
+                <div class="collapse" id="soundcloud">
+                <ul class="navbar-nav ps-3">
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>SoundCloud Likes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>SoundCloud Follow</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>SoundCloud Plays</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+          </li>
+
+          <!-- Youtube -->
+          <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#youtube">
+                <span class="me-3"><i class="fa-brands fa-youtube"></i></span>
+                <span>Youtube</span>
+                <span class="ms-auto">
+                    <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                    </span>
+                </span>
+            </a>
+            <div class="collapse" id="youtube">
+                <ul class="navbar-nav ps-3">
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>YouTube Likes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Youtube Views</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Youtube Subscribe</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <!-- Reddit -->
+
+
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#reddit">
+                <span class="me-3"><i class="fa-brands fa-reddit-alien"></i></span>
+                <span>Reddit</span>
+                <span class="ms-auto">
+                    <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                    </span>
+                </span>
+            </a>
+            <div class="collapse" id="reddit">
+                <ul class="navbar-nav ps-3">
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Reddit Members</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Reddit Upvotes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <!-- Vkontakte -->
+
+
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#vkontakte">
+                <span class="me-3"><i class="fa-brands fa-vk"></i></span>
+                <span>Vkontakte</span>
+                <span class="ms-auto">
+                    <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                    </span>
+                </span>
+            </a>
+            <div class="collapse" id="vkontakte">
+                <ul class="navbar-nav ps-3">
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Vkontakte Groups</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Vkontakte Plays</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Pinterest -->
+
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#pinterest">
+                <span class="me-3"><i class="fa-brands fa-pinterest-p"></i></span>
+                <span>Pinterest</span>
+                <span class="ms-auto">
+                    <span class="right-icon">
+                    <i class="bi bi-chevron-down"></i>
+                    </span>
+                </span>
+            </a>
+            <div class="collapse" id="pinterest">
+                <ul class="navbar-nav ps-3">
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Pinterest Save</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 pt-0">
+                            <span>Pinterest Followers</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Likee -->
+
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#likee">
+                <span class="me-3"><i class="fa-solid fa-heart"></i></span>
+                <span>Likee Followers</span>
+            </a>
+        </li>
+
+
+        <!-- Telegram -->
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#telegram">
+                <span class="me-3"><i class="fa-brands fa-telegram-plane"></i></span>
+                <span>Telegram Channels</span>
+            </a>
+        </li>
+
+
+        <!-- OK.ru -->
+
+
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#OKru">
+                <span class="me-3"><i class="fa-brands fa-forumbee"></i></span>
+                <span>OK.ru Group Join</span>
+            </a>
+        </li>
+
+        <!-- Reverbnation -->
+
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#reverbnation">
+                <span class="me-3"><i class="fa-solid fa-star"></i></span>
+                <span>Reverbnation Fans</span>
+            </a>
+        </li>
+
+
+        <li>
+            <a class="nav-link pt-2 p-3 sidebar-link" data-bs-toggle="collapse" href="#reverbnation">
+                <span class="me-3"><i class="fa-solid fa-cannabis"></i></span>
+                <span>Earn With Referral</span>
+            </a>
+        </li>
+
+        
+         
+
+
+
+          <li class="my-0"><hr class="dropdown-divider bg-light" /></li>
+          <li>
+            <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+              HELP
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-3">
+              <span class="me-2"><i class="fa-solid fa-headset"></i></span>
+              <span>Contact Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="nav-link px-3">
+              <span class="me-2"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- offcanvas -->
+
+  <div class="main_content">
+      <div class="container">
+          <div class="heading">
+            <span>
+                Welcome to the World's <b>#1</b> Social Media Exchange Platform!
+            </span>
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="what_you_get">
+                <h2>What you Get Here?</h2>
+                <div class="work">
+                        <div class="work_data">
+                            <img src="./Assets/addAccounts.png" width="100px" >
+                            <h5>Add Your Account</h1>
+                        </div>
+
+                        <div class="work_data">
+                            <img src="./Assets/recieve_engagement.png" width="100px" >
+                            <h5>Recieve Engagement</h1>
+                        </div>
+
+                        <div class="work_data">
+                            <img src="./Assets/completeTasks.png" width="100px" >
+                            <h5>Complete Tasks</h1>
+                        </div>
+
+                        <div class="work_data">
+                            <img src="./Assets/earn_points.png" width="100px" >
+                            <h5>Earn Coins</h1>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="how_to_complete">
+                <h2>How to Complete Tasks?</h2>
+                <div class="how_to_complete_tasks1">
+                    <p>
+                        You will get Free Coins by completing the tasks displayed on the Left Side
+                        and also add your Accounts and recieve Engagements on your accounts.
+                    </p>
+                </div>
+
+                <div class="how_to_complete_tasks2">
+                    <p>
+                        You will get Free Coins by completing the tasks displayed on the Left Side
+                        and also add your Accounts and recieve Engagements on your accounts.
+                    </p>
+                </div>
+
+                <div class="how_to_complete_tasks3">
+                    <p>
+                        You will get Free Coins by completing the tasks displayed on the Left Side
+                        and also add your Accounts and recieve Engagements on your accounts.
+                    </p>
+                </div>
+
+                <div class="how_to_complete_tasks4">
+                    <p>
+                        You will get Free Coins by completing the tasks displayed on the Left Side
+                        and also add your Accounts and recieve Engagements on your accounts.
+                    </p>
+                </div>
+            </div>
+        </div>
+            
+      
+
+  </div>
+
+    
+    
+
+    <!--JQuery, Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--AOS js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--LightBox-->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <!--Isotope Layout-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    
+    
+</body>
+</html>

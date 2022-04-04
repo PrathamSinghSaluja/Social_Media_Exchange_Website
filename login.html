@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Bootstrap File-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.0/font/bootstrap-icons.min.css" integrity="sha512-H4E1ASW8Ru1Npd1wQPB7JClskV8Nv1FG/bXK6TWMD+U9YMlR+VWUZp7SaIbBVBV/iRtefsIsv9dLSN6fdUI36w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS File-->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="container-fluid">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg header-nav fixed-top" id="mynav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">Social Media</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html#aboutUs" active>About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html#services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html#contactUs">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html#testimonials">Testimonials</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <button onclick="window.location.href = './login.html'" class="btn login">Login</button>
+                        <button class="btn signUp">Sign Up</button>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    <!-- Header End -->
+
+    
+    <div class="login_form center">
+        <h1>Login</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" style="color: #fff;" required>
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" style="color: #fff;" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login">
+            <div class="signUp_link">
+                Not a member? <a href="./signUp.html">Signup</a>
+            </div>
+        </form>
+    </div>
+
+     <!--JQuery, Bootstrap-->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!--AOS js-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <!--LightBox-->
+     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+     <!--Custom JS-->
+     <script src="./js/script.js"></script>
+     <!--Isotope Layout-->
+     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+</body>
+</html>

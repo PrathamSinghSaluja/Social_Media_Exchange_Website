@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!--Bootstrap File-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.0/font/bootstrap-icons.min.css" integrity="sha512-H4E1ASW8Ru1Npd1wQPB7JClskV8Nv1FG/bXK6TWMD+U9YMlR+VWUZp7SaIbBVBV/iRtefsIsv9dLSN6fdUI36w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS File-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--AOS Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+     <!-- Header -->
+     <div class="container-fluid">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg header-nav fixed-top" id="mynav">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html">Social Media</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html#aboutUs" active>About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html#services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html#contactUs">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./index.html#testimonials">Testimonials</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <button onclick="window.location.href = './login.html'" class="btn login">Login</button>
+                        <button onclick="window.location.href = './signUp.html'" class="btn signUp">Sign Up</button>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    <!-- Header End -->
+
+
+    <!-- Home Starts -->
+
+        
+            <div class="row home" id="home">
+                <div class="home_left col-lg-6 col-xl-6 col-12 col-sm-12 col-md-12" id="info">
+                    <h1>Recieve Engagement on your Social Media Accounts!</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id velit 
+                        maxime iste quidem quia incidunt aliquam accusamus perferendis, ipsa.
+                    </p>
+                    <button class="btn signUp">Sign Up for Free</button>
+                </div>
+                <div class="home_right col-lg-6 col-xl-6 col-12 col-md-12 col-sm-12" id="image">
+                    <img src="./Assets/bullhorn.png" alt="home icon">
+                </div>
+            </div>
+        
+        <!-- Home Ends -->
+
+
+        <!-- About Us Starts -->
+
+        <div class="pt-5 pb-5" id="aboutUs">
+            <div class="row aboutUs" id="aboutUs">
+                <div class="aboutUs_heading col-lg-12 col-xl-12 col-12 col-sm-12 col-md-12">
+                    <h1>Who we are</h1>
+                </div>
+                <div class="aboutUs_desc col-lg-12 col-xl-12 col-12 col-sm-12 col-md-12">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi quo 
+                        perspiciatis nam aliquid, deleniti ex nesciunt dignissimos! Tenetur excepturi 
+                        similique accusantium dolorem aliquam neque laboriosam id.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi quo 
+                        perspiciatis nam aliquid, deleniti ex nesciunt dignissimos! Tenetur excepturi 
+                        similique accusantium dolorem aliquam neque laboriosam id.<br/><br/>
+                    </p>
+                </div>
+           
+    
+            <!-- About Us Ends -->
+    
+            <!-- How we work Starts -->
+                <div class="row howWeWork" id="howWeWork">
+                    <div class="howWeWork_heading col-lg-12 col-xl-12 col-12 col-sm-12 col-md-12">
+                        <h1>How we Work</h1>
+                    </div>
+                    <div class="howWeWork_info">
+                        <div class="howWeWork_login">
+                            <img src="./Assets/loginIcon.png" >
+                            <h5>Login</h1>
+                        </div>
+                        <div class="howWeWork_login">
+                            <img src="./Assets/completeTasks.png" >
+                            <h5>Complete Tasks</h1>
+                        </div>
+                        <div class="howWeWork_login">
+                            <img src="./Assets/earn_points.png" >
+                            <h5>Earn Points</h1>
+                        </div>
+                        <div class="howWeWork_login">
+                            <img src="./Assets/addAccounts.png" >
+                            <h5>Add Accounts</h1>
+                        </div>
+                        <div class="howWeWork_login">
+                            <img src="./Assets/recieve_engagement.png" >
+                            <h5>Recieve Engagement</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- How We Work Ends -->
+
+        <!-- Services Start -->
+
+        
+        <div class="pt-1 pb-5" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="services_head services col-sm-12">
+                        <h1>Our Services</h1>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </span>
+                            <h4>Facebook</h4>
+                            <p style="text-align: justify;">
+                                Facebook is the fastest growing and most renowned social network of the 
+                                world, therefore, it's of vital importance to represent your business here. 
+                                With the help of our Company, you can gain thousands of likes, followers and 
+                                shares <b>ABSOLUTELY FOR FREE</b>.
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                            <h4>Instagram</h4>
+                            <p style="text-align: justify;">
+                                Instagram is one of the shortest and funniest ways to share your life events 
+                                with friends through various pictures. You can take a photo with your mobile 
+                                phone, choose one of the filters to transform the image into a memory: 
+                                You can have the picture around forever.
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-youtube"></i>
+                            </span>
+                            <h4>Youtube</h4>
+                            <p style="text-align: justify;">
+                                On YouTube, you have also a great chance to promote your video 
+                                receiving views, likes and favorites. We give you 
+                                the opportunity to increase the amount of your YouTube channel 
+                                subscribers. And what's the important thing is that You can get 
+                                all this for free and with quality
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-twitter"></i>
+                            </span>
+                            <h4>Twitter</h4>
+                            <p style="text-align: justify;">
+                                Twitter is one of the greatest ways to keep in touch with people, to express 
+                                your feelings, and to be informed of everything. Consequently, it's crucial 
+                                for You to be active on Twitter as much as possible and to have many followers. 
+                                Gaining plenty of followers will give you more exposure & Engagement.
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </span>
+                            <h4>Pinterest</h4>
+                            <p style="text-align: justify;">
+                                Pinterest is a tool for gathering and arranging things you are fond of. 
+                                Thousands of people use Pinterest in their daily life and work. Tastes differ, 
+                                but no matter, you will find everything you are interested in there. So hurry 
+                                up to have lots of Followers and Saves via our Company.
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-vk"></i>
+                            </span>
+                            <h4>VK Page</h4>
+                            <p style="text-align: justify;">
+                                VK is the second 
+                                biggest social network in Europe after Facebook. As one of the famous 
+                                social networks, it allows users to send public and private messages to 
+                                their contacts. Using VK you can create groups, events, and public pages, 
+                                share and tag images, audio, and video, and play browser-based games. 
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-soundcloud"></i>
+                            </span>
+                            <h4>SoundCloud</h4>
+                            <p style="text-align: justify;">
+                                SoundCloud is the number one social sound platform where you have an 
+                                opportunity to create your own sounds and share them with everybody. 
+                                By recording and uploading sounds to SoundCloud people can easily share 
+                                them with their friends and also share with the public.
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </span>
+                            <h4>TikTok</h4>
+                            <p style="text-align: justify;">
+                                TikTok is also one of the most famous Social Network that gained a lot of 
+                                Publicity in recent years. With our Company you can get 
+                                TikTok followers, TikTok Likes on your Videos which increases your 
+                                channel engagement among others and all this is provided to you 
+                                <b>ABSOLUTELY FREE</b>.
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="item">
+                            <span class="icon service_box_col_one">
+                                <i class="fa-brands fa-reddit"></i>
+                            </span>
+                            <h4>Reddit</h4>
+                            <p style="text-align: justify;">
+                                Reddit is an social news aggregation, web content 
+                                rating, and discussion website. Registered members submit 
+                                content to the site such as links, text posts, images, and 
+                                videos, which are then voted up or down by other members.
+                                Here you can get Reddit Posts Comments
+                            </p>
+                            <button onclick="window.location.href = './signUp.html'" class="btn"> Sign Up For Free</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+                   <section class="contactUs" id="contactUs">
+                        <div class="contactUs_head contactUs col-sm-12">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div class="container-fluid contactUs_data">
+                            <div class="contactInfo">
+                                <div class="box">
+                                    <div class="icon">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Address</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="icon">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Phone</h3>
+                                        <p>999-999-9999</p>
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <div class="icon">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Email</h3>
+                                        <p>Lorem@ipsum.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contactUsForm">
+                                <form>
+                                    <h2>Send Message</h2>
+                                    <div class="inputBox">
+                                        <input type="text" name="" required="required">
+                                        <span>Full Name</span>
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="text" name="" required="required">
+                                        <span>Email</span>
+                                    </div>
+                                    <div class="inputBox">
+                                        <textarea required="required"></textarea>
+                                        <span>Type your Message...</span>
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="submit" name="" value="Send">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                   </section> 
+
+
+                   <section class="testimonials" id="testimonials">
+                        <div class="testimonials_head testimonials col-sm-12">
+                            <h1>Testimonials</h1>
+                        </div>            
+                        <div class="row">
+                            <div class="col testimonial_data">
+                                <div class="testimonial">
+                                    <img src="./Assets/emoji1.png" alt="happy client">
+                                    <div class="name">Full Name</div>
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+                                        placeat est laudantium suscipit alias, quibusdam quod fuga asperiores
+                                        mollitia harum quas recusandae aperiam consequatur porro animi deleniti 
+                                        nisi facere accusamus?
+                                    </p>
+                                </div>
+
+                                <div class="testimonial">
+                                    <img src="./Assets/emoji2.png" alt="happy client">
+                                    <div class="name">Full Name</div>
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+                                        placeat est laudantium suscipit alias, quibusdam quod fuga asperiores
+                                        mollitia harum quas recusandae aperiam consequatur porro animi deleniti 
+                                        nisi facere accusamus?
+                                    </p>
+                                </div>
+
+                                <div class="testimonial">
+                                    <img src="./Assets/emoji3.png" alt="happy client">
+                                    <div class="name">Full Name</div>
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+                                        placeat est laudantium suscipit alias, quibusdam quod fuga asperiores
+                                        mollitia harum quas recusandae aperiam consequatur porro animi deleniti 
+                                        nisi facere accusamus?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+    
+
+               <footer class="container-fluid" id="footer"> 
+                    <div class="footer-content">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Magnam aliquam rem iusto autem sed maiores quibusdam, quae 
+                            facilis adipisci. Vitae repellat odio voluptate amet cumque maiores 
+                            nisi tempora sequiea.
+                        </p>
+                        <ul class="footer_socialMediaLinks">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+
+                        <ul class="footer_quickLinks">
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="./index.html#aboutUs">About Us</a></li>
+                            <li><a href="./index.html#contactUs">Contact Us</a></li>
+                            <li><a href="./signUp.html">Sign Up</a></li>
+                        </ul>
+                        <p>Copyright &copy;<span id="year"></span> Social media. Designed by <span style="color: rgb(6, 255, 234);">Web Micro</span>
+
+                    </div>
+                    
+               </footer>
+        
+                
+    
+
+
+    <!--JQuery, Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--AOS js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--LightBox-->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!--Custom JS-->
+    <script src="./js/script.js"></script>
+    <!--Isotope Layout-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    
+</body>
+</html>
