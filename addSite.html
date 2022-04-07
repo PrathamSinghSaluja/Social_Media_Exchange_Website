@@ -3,11 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Add Your Accounts</title>
     <!--Bootstrap File-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.0/font/bootstrap-icons.min.css" integrity="sha512-H4E1ASW8Ru1Npd1wQPB7JClskV8Nv1FG/bXK6TWMD+U9YMlR+VWUZp7SaIbBVBV/iRtefsIsv9dLSN6fdUI36w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <!--Custom CSS File-->
     <link rel="stylesheet" href="./css/sidebar.css">
 
@@ -23,9 +23,9 @@
 
      <!-- Boxiocns CDN Link -->
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
+
 
     <!-- top navigation bar -->
     <nav class="navbar navbar-expand-lg  fixed-top">
@@ -56,7 +56,7 @@
             </span>
         </div>
         </div>
-    </nav>
+      </nav>
       <!-- top navigation bar -->
 
 
@@ -84,7 +84,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" name="buy_subscription" id="buy_subscription_id" class="nav-link pt-1 p-3 active">
+                        <a href="#" class="nav-link pt-1 p-3 active">
                             <span class="me-2"><i class="fa-solid fa-bag-shopping"></i></span>
                             <span>Buy Subscription</span>
                         </a>
@@ -492,84 +492,66 @@
   </div>
   <!-- offcanvas -->
 
-  <div class="main_content">
+
+  <div class="add_sites">
       <div class="container">
-          <div class="heading">
-            <span>
-                Welcome to the World's <b>#1</b> Social Media Exchange Platform!
-            </span>
-          </div>
-        </div>
+          <h1>Add Your Accounts</h1>
+          <p>Here you can add your own accounts to get engagement on them.</p>
 
+            <form>
+                <label for="type_of_task">Type:</label>
+                <select id="type_of_task">
+                    <option value="task">Select Type of Task</option>
+                    <option value="facebook_likes">Facebook Likes</option>
+                    <option value="facebook_share">Facebook Shares</option>
+                    <option value="facebook_followers">Facebook Followers</option>
+                    <option value="facebook_post_like">Facebook Post Likes</option>
+                    <option value="facebook_post_share">Facebook Post Share</option>
+                    <option value="instagram_likes">Instagram Likes</option>
+                    <option value="instagram_followers">Instagram Followers</option>
+                    <option value="twitter_likes">Twitter Likes</option>
+                    <option value="twitter_tweets">Twitter Tweets</option>
+                    <option value="twitter_followers">Twitter Followers</option>
+                    <option value="twitter_retweets">Twitter Retweets</option>
+                    <option value="tiktok_video_likes">TikTok Video Likes</option>
+                    <option value="tiktok_followers">TikTok Followers</option>
+                    <option value="soundcloud_likes">SoundCloud Likes</option>                        
+                    <option value="soundcloud_follow">SoundCloud Follow</option>
+                    <option value="soundcloud_plays">SoundCloud Plays</option>
+                    <option value="youtube_likes">Youtube Likes</option>
+                    <option value="youtube_views">Youtube Views</option>
+                    <option value="youtube_subscribe">Youtube Subscribe</option>
+                    <option value="reddit_members">Reddit Members</option>
+                    <option value="reddit_upvotes">Reddit Upvotes</option>
+                    <option value="vkontakte_groups">Vkontakte Groups</option>
+                    <option value="vkontakte_plays">Vkontakte Plays</option>
+                    <option value="pinterest_save">Pinterest Saves</option>
+                    <option value="pinterest_followers">Pinterest Followers</option>
+                    <option value="likee_followers">Likee Followers</option>
+                    <option value="telegram_channels">Telegram Channels</option>
+                    <option value="okru_group_join">OK.ru Group Join</option>
+                    <option value="reverbnation_fans">Reverbnation Fans</option>
+            </select>
 
-        <div class="container-fluid">
-            <div class="what_you_get">
-                <h2>What you Get Here?</h2>
-                <div class="work">
-                        <div class="work_data">
-                            <img src="./Assets/addAccounts.png" width="100px" >
-                            <h5>Add Your Account</h1>
-                        </div>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title_id" placeholder="Page Title">
 
-                        <div class="work_data">
-                            <img src="./Assets/recieve_engagement.png" width="100px" >
-                            <h5>Recieve Engagement</h1>
-                        </div>
+            <label for="url">URL:</label>
+            <input type="url" name="url" id="url_id" placeholder="Account Link">
 
-                        <div class="work_data">
-                            <img src="./Assets/completeTasks.png" width="100px" >
-                            <h5>Complete Tasks</h1>
-                        </div>
+            <label for="total_clicks">Total Clicks:</label>
+            <input type="number" name="total_clicks" id="total_clicks_id" placeholder="Total Clicks">
 
-                        <div class="work_data">
-                            <img src="./Assets/earn_points.png" width="100px" >
-                            <h5>Earn Coins</h1>
-                        </div>
-                </div>
-            </div>
-        </div>
+            <label for="daily_clicks">Daily Clicks:</label>
+            <input type="number" name="daily_clicks" id="daily_clicks_id" placeholder="Daily Clicks">
 
-        <div class="container-fluid">
-            <div class="how_to_complete">
-                <h2>How to Complete Tasks?</h2>
-                <div class="how_to_complete_tasks1">
-                    <p>
-                        You will get Free Coins by completing the tasks displayed on the Left Side
-                        and also add your Accounts and recieve Engagements on your accounts.
-                    </p>
-                </div>
-
-                <div class="how_to_complete_tasks2">
-                    <p>
-                        You will get Free Coins by completing the tasks displayed on the Left Side
-                        and also add your Accounts and recieve Engagements on your accounts.
-                    </p>
-                </div>
-
-                <div class="how_to_complete_tasks3">
-                    <p>
-                        You will get Free Coins by completing the tasks displayed on the Left Side
-                        and also add your Accounts and recieve Engagements on your accounts.
-                    </p>
-                </div>
-
-                <div class="how_to_complete_tasks4">
-                    <p>
-                        You will get Free Coins by completing the tasks displayed on the Left Side
-                        and also add your Accounts and recieve Engagements on your accounts.
-                    </p>
-                </div>
-            </div>
-        </div>
-            
-      
-
+            <input type="submit" value="Submit">
+        </form>
+      </div>
   </div>
 
-    
-    
 
-    <!--JQuery, Bootstrap-->
+   <!--JQuery, Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--AOS js-->
@@ -581,8 +563,7 @@
     
     <!--Isotope Layout-->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    
 
-    
-    
-</body>
-</html>
+  </body>
+  </html>
