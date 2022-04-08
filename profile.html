@@ -462,10 +462,6 @@
             </a>
         </li>
 
-        
-         
-
-
 
           <li class="my-0"><hr class="dropdown-divider bg-light" /></li>
           <li>
@@ -492,81 +488,158 @@
   </div>
   <!-- offcanvas -->
 
+  <div class="my_profile">
+    <div class="container">
+        <h1>My Profile</h1>
+        <p>Here you can edit your profile!</p>
 
-  <div class="add_sites">
-      <div class="container">
-          <h1>Add Your Accounts</h1>
-          <p>Here you can add your own accounts to get engagement on them.</p>
+        <div class="emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="./Assets/user.png" alt=""/>
+                            <div class="file btn btn-lg btn-primary">
+                                Change Photo
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                            <h5>
+                                Pratham Singh
+                            </h5>
+                            <p class="profile_referal">
+                                Referal Link : <span>pratham1234</span>
+                            </p>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"> 
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>User Id</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Pratham123</p>
+                                    </div>
+                                </div>
 
-            <form>
-                <label for="type_of_task">Type:</label>
-                <select id="type_of_task">
-                    <option value="task">Select Type of Task</option>
-                    <option value="facebook_likes">Facebook Likes</option>
-                    <option value="facebook_share">Facebook Shares</option>
-                    <option value="facebook_followers">Facebook Followers</option>
-                    <option value="facebook_post_like">Facebook Post Likes</option>
-                    <option value="facebook_post_share">Facebook Post Share</option>
-                    <option value="instagram_likes">Instagram Likes</option>
-                    <option value="instagram_followers">Instagram Followers</option>
-                    <option value="twitter_likes">Twitter Likes</option>
-                    <option value="twitter_tweets">Twitter Tweets</option>
-                    <option value="twitter_followers">Twitter Followers</option>
-                    <option value="twitter_retweets">Twitter Retweets</option>
-                    <option value="tiktok_video_likes">TikTok Video Likes</option>
-                    <option value="tiktok_followers">TikTok Followers</option>
-                    <option value="soundcloud_likes">SoundCloud Likes</option>                        
-                    <option value="soundcloud_follow">SoundCloud Follow</option>
-                    <option value="soundcloud_plays">SoundCloud Plays</option>
-                    <option value="youtube_likes">Youtube Likes</option>
-                    <option value="youtube_views">Youtube Views</option>
-                    <option value="youtube_subscribe">Youtube Subscribe</option>
-                    <option value="reddit_members">Reddit Members</option>
-                    <option value="reddit_upvotes">Reddit Upvotes</option>
-                    <option value="vkontakte_groups">Vkontakte Groups</option>
-                    <option value="vkontakte_plays">Vkontakte Plays</option>
-                    <option value="pinterest_save">Pinterest Saves</option>
-                    <option value="pinterest_followers">Pinterest Followers</option>
-                    <option value="likee_followers">Likee Followers</option>
-                    <option value="telegram_channels">Telegram Channels</option>
-                    <option value="okru_group_join">OK.ru Group Join</option>
-                    <option value="reverbnation_fans">Reverbnation Fans</option>
-            </select>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Name</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Pratham</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>pratham@gmail.com</p>
+                                    </div>
+                                </div>
 
-            <label for="title">Title:</label>
-            <input type="text" name="title" id="title_id" placeholder="Page Title">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Phone</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>123 456 7890</p>
+                                    </div>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" style="border: none;border-bottom: 2px solid #004175;font-weight: 700;" aria-selected="true">Your Sites</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"> 
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                
+                                <div class="row pt-4">
+                                    <div class="col-md-4">
+                                        <label>Facebook Post Like</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>23 Likes</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="button" style="background-color: #004175;color: #fff; font-size: 14px; font-weight: 500;border: none;"  value="Change Link">
+                                    </div>
+                                </div>
 
-            <label for="url">URL:</label>
-            <input type="url" name="url" id="url_id" placeholder="Account Link">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Instagram Followers</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>500 Followers</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="button" style="background-color: #004175;color: #fff; font-size: 14px; font-weight: 500;border: none;" value="Change Link">
+                                    </div>
+                                </div>
 
-            <label for="total_clicks">Total Clicks:</label>
-            <input type="number" name="total_clicks" id="total_clicks_id" placeholder="Total Clicks">
+                                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-danger">Delete Account</button>
+            </form>           
+        </div>
+    </div>
+</div>
 
-            <label for="daily_clicks">Daily Clicks:</label>
-            <input type="number" name="daily_clicks" id="daily_clicks_id" placeholder="Daily Clicks">
 
-            <label for="daily_clicks">CPC:</label>
-            <input type="number" name="cpc" id="cpc_id" placeholder="Cost Per Click">
 
-            <input type="submit" value="Submit">
-        </form>
-      </div>
-  </div>
 
 
    <!--JQuery, Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!--AOS js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!--LightBox-->
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    
-    <!--Isotope Layout-->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <!--AOS js-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <!--LightBox-->
+   <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+   
+   <!--Isotope Layout-->
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
   </body>
   </html>

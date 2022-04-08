@@ -390,6 +390,11 @@ nav ul li span{
     }
   }
 
+/* Dashboard Ends */
+
+  
+
+/* Subscription Starts */
 
 .subscription{
     width: 70%;
@@ -579,6 +584,11 @@ nav ul li span{
 }
 
 
+/* Subscription Starts */
+
+/* Add Sites Start */
+
+
 .add_sites{
     width: 70%;
     position: absolute;
@@ -673,12 +683,332 @@ nav ul li span{
 }
 
 
+/* Add Sites End */
+
+
+/* Profile Page */
+
+.my_profile{
+    width: 70%;
+    position: absolute;
+    left: calc(var(--offcanvas-width)+200px);
+    top: calc(var(--topNavbarHeight)+70px);
+    overflow-x: hidden;
+    background-color: #fff;
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .my_profile{
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: var(--topNavbarHeight);
+        padding-top: 10px;
+    }
+  }
+
+  
+@media (min-width: 992px) {
+    .my_profile{
+        position: relative;
+        left: var(--offcanvas-width);
+        top: var(--topNavbarHeight);
+        padding-top: 10px;
+        overflow-x: hidden;
+    }
+  }
+
+.my_profile .container h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.my_profile .container p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.my_profile .container .emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.my_profile .container .emp-profile .profile-img{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_profile .container .profile-img img{
+    width: 50%;
+    height: 90%;
+}
+
+.my_profile .container .profile-img .file {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #004175;
+}
+
+
+.my_profile .container .profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+
+.my_profile .container .profile-head h5{
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .my_profile .container .profile-head h5{
+        margin-top: 50px;
+    }
+  }
+
+.my_profile .container .profile-head h6{
+    color: #0062cc;
+}
+
+
+.my_profile .container .profile-edit-btn{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+    color: #004175;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.my_profile .container .profile_referal{
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.my_profile .container .profile_referal span{
+    color: #0062cc;
+}
+
+.my_profile .container .profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+
+
+.my_profile .container .profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+
+
+.my_profile .container .profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #004175;
+}
+
+.my_profile .container .profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+
+.my_profile .container .profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.my_profile .container .profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.my_profile .container .profile-work ul{
+    list-style: none;
+}
+
+
+.my_profile .container .profile-tab label{
+    font-weight: 600;
+}
+
+
+.my_profile .container .profile-tab p{
+    font-weight: 600;
+    color: #004175;
+}
+
+/* MyProfile Ends */
+
+
+/* Referal Page Starts */
+
+.referal{
+    width: 70%;
+    position: absolute;
+    left: calc(var(--offcanvas-width)+200px);
+    top: calc(var(--topNavbarHeight)+70px);
+    overflow-x: hidden;
+    background-color: #fff;
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .referal{
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: var(--topNavbarHeight);
+        padding-top: 10px;
+    }
+  }
+
+  
+@media (min-width: 992px) {
+    .referal{
+        position: relative;
+        left: var(--offcanvas-width);
+        top: var(--topNavbarHeight);
+        padding-top: 10px;
+        overflow-x: hidden;
+    }
+  }
+
+.referal .container h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.referal .container p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.referal .container h2 span{
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #004175;
+    padding-left: 20px;
+}
+
+/* Referal Page Ends */
 
 
 
+.facebook_like{
+    width: 70%;
+    position: absolute;
+    left: calc(var(--offcanvas-width)+200px);
+    top: calc(var(--topNavbarHeight)+70px);
+    overflow-x: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .facebook_like{
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: var(--topNavbarHeight);
+        padding-top: 10px;
+    }
+  }
+
+  
+@media (min-width: 992px) {
+    .facebook_like{
+        position: relative;
+        left: var(--offcanvas-width);
+        top: var(--topNavbarHeight);
+        padding-top: 10px;
+        overflow-x: hidden;
+    }
+  }
+
+.facebook_like .container h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.facebook_like .container {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
 
 
+.facebook_like .container .notice{
+    background-color: yellow;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
 
+.facebook_like_content{
+    text-align: center;
+    margin-top: 20px;
+}
 
+.facebook_like_point{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.facebook_like_profile img{
+    width: 200px;
+}
+
+.facebook_like_button input{
+    background-color: #004175;
+    color: #fff;
+    font-size: 22px;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.facebook_like_button input:hover{
+    background-color: #0062cc;
+}
+
+.facebook_like_skip input{
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.facebook_like_skip input:hover{
+    background-color: rgb(110, 110, 110);
+}
 
 
